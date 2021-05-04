@@ -1,8 +1,8 @@
 from gpiozero import PWMOutputDevice
 import time
 
-MOTOR_PIN = 4
-motor = PWMOutputDevice(MOTOR_PIN, 50)
+MOTOR_PIN = "GPIO4"
+motor = PWMOutputDevice(pin=MOTOR_PIN, frequency=50)
 
 while True:
     val = float(input("Duty Cycle: "))

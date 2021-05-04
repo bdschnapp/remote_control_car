@@ -5,7 +5,7 @@ MOTOR_PIN = 4
 motor = PWMOutputDevice(MOTOR_PIN, 50)
 
 while True:
-    val = int(input("Duty Cycle: "))
+    val = float(input("Duty Cycle: "))
     if val == -100:
         break
     motor.value = val

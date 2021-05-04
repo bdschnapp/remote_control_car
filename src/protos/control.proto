@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package control;
+
+service Control {
+  rpc turn (turnRequest) returns (turnReply) {}
+  rpc speed (speedRequest) returns (speedReply){}
+}
+
+message turnRequest {
+  int32 position = 1;
+}
+
+message turnReply {
+  bool success = 1;
+}
+
+message speedRequest {
+  int32 speed = 1;
+}
+
+message speedReply {
+  bool success = 1;
+}

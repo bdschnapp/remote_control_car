@@ -32,9 +32,10 @@ while True:
     if val == -1:
         direction_control(0)
 
-    if val == -2:
+    elif val == -2:
         direction_control(1)
 
     else:
         motor.value = val
-        time.sleep(.5)
+
+    time.sleep(.5)

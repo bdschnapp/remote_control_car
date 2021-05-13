@@ -12,6 +12,6 @@ message visionRequest {
 }
 
 message visionReply {
-  bytes img = 1;
+  string img = 1;
   bool success = 2;
 }
